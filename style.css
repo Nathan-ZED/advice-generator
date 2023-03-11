@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+main {
+    background: hsl(218, 23%, 16%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: hsl(217, 19%, 24%);
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    position: relative;
+    transition: height .2s ease-in-out;
+}
+
+.card span:first-child {
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.card .card-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 0 1rem;
+}
+
+.card .card-line div {
+    height: 20px;
+    width: 8px;
+    background: #fff;
+    margin: 0 .5rem;
+    border-radius: 10px;
+}
+
+.card hr {
+    background: #ffffff34;
+    width: 95%;
+    margin: 0 auto;
+    border: none;
+    height: 1px;
+}
+
+.card button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: hsl(150, 100%, 66%);
+    border: none;
+    position: absolute;
+    bottom: -25px;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+    }
+
+}
